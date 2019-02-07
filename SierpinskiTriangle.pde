@@ -16,11 +16,11 @@ public void sierpinski(double x, double y, double len)
     triangle((float)x,(float)y,(float)(x+len),(float)y,(float)(x+len/2),(float)(y-len));
   else
   {
-    fill(240,40,40);
+    fill(255,0,(int)(Math.random()*255));
     sierpinski(x,y,len/2);
-    fill(240,240,40);
+    fill((int)(Math.random()*255),255,0);
     sierpinski(x+len/2,y,len/2);
-    fill(40,240,240);
+    fill(0,(int)(Math.random()*255),255);
     sierpinski(x+len/4,y-len/2,len/2);
     
   }
